@@ -30,5 +30,5 @@ WORKDIR /wop/server
 ADD start-* /wop/server/
 ADD config/ /wop/server/data/wop/
 
-RUN ["chmod", "+x", "/wop/server/start-ffa.sh"]
+RUN ["chmod", "+x", "start-ffa.sh"]
 CMD /wop/server/start-ffa.sh
