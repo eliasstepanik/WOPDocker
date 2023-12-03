@@ -28,6 +28,6 @@ RUN mv /tmp/worldofpadman-1-6-2/* /wop/server/data/
 WORKDIR /wop/server
     
 ADD start-* /wop/server/
-ADD config/ /wop/server/server/wop/
+ADD config/ /wop/server/data/wop/
 
-CMD ./data/wopded-linux.x86_64 +set dedicated 1 +set net_port 27960 +set com_hunkMegs 256 +exec /wop/server/server/wop/server_settings.cfg
+CMD /wop/server/start-ffa.sh
