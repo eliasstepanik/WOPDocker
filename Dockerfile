@@ -4,7 +4,6 @@
 FROM ubuntu:22.04
 
 EXPOSE 27960/udp
-EXPOSE 27960/tcp
 
 
 RUN echo 'APT::Install-Suggests "0";' >> /etc/apt/apt.conf.d/00-docker

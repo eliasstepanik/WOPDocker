@@ -1,8 +1,12 @@
 version: "3.9"
 
+volumes:
+    config:
+
 services:
     wop:
         build: .
+        volumes:
+            - config:/wop/server/data/wop/
         ports:
-            - 27960:27960/tcp
             - 27960:27960/udp
