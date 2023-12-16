@@ -8,5 +8,6 @@ services:
         build: .
         volumes:
             - config:/wop/server/data/wop/
+        network_mode: "host"
         ports:
             - 27960:27960/udp
